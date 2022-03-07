@@ -1,10 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main(void) {
-    char str[] = "145";
-    int num = atoi(str);
-    printf("%d\n", num);
+    int len, i;
+    char str1[256], str2[] = "AAA";
+    scanf("%s", str1);
 
-    return 0;
+    if (strcmp(str1, str2) == 0) {
+        printf("同じ\n");
+    } else {
+        printf("違う\n");
+    }
 }
